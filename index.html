@@ -1,278 +1,245 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>María Zorayda Bejarano | Data Analyst Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="output.CSS"/>
-<style>
-        body {
-            font-family: 'Hanken Grotesk', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .fill-icon {
-            font-variation-settings: 'FILL' 1;
-        }
-        .geometric-bg {
-            background-image: radial-gradient(circle at 2px 2px, rgba(255,127,80,0.05) 1px, transparent 0);
-            background-size: 40px 40px;
-        }
-    </style>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María Zorayda Bejarano | Portafolio de Analista de Datos</title>
+    <!-- Enlace al archivo CSS compilado de Tailwind -->
+    <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-background text-on-background geometric-bg">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
-<nav class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-<div class="font-headline-md text-headline-md font-bold text-on-surface">María Zorayda Bejarano</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#home">Home</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#about">About</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#projects">Projects</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
-<a class="ml-4 px-6 py-2 bg-primary-container text-on-primary font-label-bold text-label-bold rounded hover:scale-95 transition-transform" href="#">Resume</a>
-</div>
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</nav>
-</header>
-<main class="max-w-container-max mx-auto px-gutter pt-32">
-<!-- Hero / Home Section -->
-<section class="min-h-[819px] flex flex-col md:flex-row items-center justify-between gap-element-gap py-section-gap" id="home">
-<div class="w-full md:w-1/2 space-y-6">
-<div class="flex items-center gap-4">
-<div class="h-[2px] w-12 bg-primary-container"></div>
-<span class="text-primary font-label-bold text-label-bold uppercase tracking-widest">Hello</span>
-</div>
-<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl">
-                    I'm María <br/>
-<span class="text-primary-container">Data Analyst</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                    Transforming complex raw data into actionable insights and strategic narratives. Specializing in technical rigor and visual storytelling.
-                </p>
-<div class="flex gap-4 pt-4">
-<button class="px-8 py-4 bg-primary-container text-on-primary font-label-bold text-label-bold rounded hover:bg-primary-container/90 transition-all">Hire Me</button>
-<button class="px-8 py-4 border border-on-surface text-on-surface font-label-bold text-label-bold rounded hover:border-secondary transition-all">View CV</button>
-</div>
-</div>
-<div class="w-full md:w-1/2 flex justify-center relative">
-<!-- Geometric decorative elements -->
-<div class="absolute -top-10 -right-10 opacity-20">
-<span class="material-symbols-outlined text-[120px] text-primary rotate-45">filter_drama</span>
-</div>
-<!-- Circular Portrait Container -->
-<div class="relative w-72 h-72 md:w-96 md:h-96">
-<div class="absolute inset-0 rounded-full border-2 border-primary-container/30 animate-[spin_10s_linear_infinite]"></div>
-<div class="absolute -inset-4 rounded-full border border-secondary/20"></div>
-<div class="absolute inset-4 rounded-full overflow-hidden bg-surface-container border-4 border-surface">
-<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A professional and confident portrait of Maria Zorayda Bejarano, a modern data analyst with a friendly smile, set against a dark, minimalist tech-inspired background. She is wearing professional attire in a charcoal studio setting, illuminated by soft coral and teal accent lighting that reflects her brand colors. The composition is clean, centered, and focuses on her professional yet approachable demeanor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWqoLF-YSOC8FFtcv8X1KNeJYwAw_z6s1_as5NpvYIDDP-tnFcayb0RsrIhOPeBvuHSRCpJzSNFOvWPwUkL8tTGIIvqDYLmSrvTYk140YMt2jIznEpauveEKGteububnA5_gOLAmF5vSX8ldBr6HQzfcO3yW1quB_8R-FXQG3a829nY4YvUJWrR6RNQhAzEN_8OAdohEAAiyzwJtNrBLkkT7-pBoA87M64rtC6ACb6zs_NIcXVKZlZNxHSHnU4ogB-Uw9W4mFj836b"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Skills Row -->
-<section class="py-12 border-y border-outline-variant/20">
-<div class="flex flex-wrap justify-center md:justify-between items-center gap-8 opacity-60">
-<div class="flex items-center gap-2 font-headline-md text-headline-md"><span class="material-symbols-outlined text-secondary">terminal</span> Python</div>
-<div class="flex items-center gap-2 font-headline-md text-headline-md"><span class="material-symbols-outlined text-secondary">database</span> SQL</div>
-<div class="flex items-center gap-2 font-headline-md text-headline-md"><span class="material-symbols-outlined text-secondary">bar_chart</span> Power BI</div>
-<div class="flex items-center gap-2 font-headline-md text-headline-md"><span class="material-symbols-outlined text-secondary">table_chart</span> Excel</div>
-<div class="flex items-center gap-2 font-headline-md text-headline-md"><span class="material-symbols-outlined text-secondary">cloud</span> AWS</div>
-</div>
-</section>
-<!-- About Me / Stats -->
-<section class="py-section-gap grid grid-cols-1 md:grid-cols-2 gap-element-gap" id="about">
-<div class="space-y-6">
-<div class="flex items-center gap-4">
-<div class="h-10 w-[2px] bg-primary-container"></div>
-<h2 class="font-headline-lg text-headline-lg">About me</h2>
-</div>
-<div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant">
-<p>My journey into data analysis began with a fascination for patterns. What started as simple spreadsheet optimizations evolved into building complex predictive models and interactive dashboards.</p>
-<p>I bridge the gap between technical data science and business strategy, ensuring that every number tells a story that leads to better decision-making.</p>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
-<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/10">
-<div class="text-primary-container font-headline-lg text-headline-lg mb-1">120+</div>
-<div class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Completed Projects</div>
-</div>
-<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/10">
-<div class="text-secondary font-headline-lg text-headline-lg mb-1">95%</div>
-<div class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Client satisfaction</div>
-</div>
-<div class="text-center p-6 bg-surface-container rounded-xl border border-outline-variant/10">
-<div class="text-primary-container font-headline-lg text-headline-lg mb-1">10+</div>
-<div class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">Years of experience</div>
-</div>
-</div>
-</section>
-<!-- Projects Section -->
-<section class="py-section-gap" id="projects">
-<div class="text-center mb-section-gap relative">
-<div class="absolute left-1/2 -top-10 h-20 w-[1px] bg-primary-container -translate-x-1/2"></div>
-<h2 class="font-headline-lg text-headline-lg inline-block pt-10">Projects</h2>
-</div>
-<div class="space-y-section-gap">
-<!-- Project 1 -->
-<div class="flex flex-col md:flex-row gap-element-gap items-center group">
-<div class="w-full md:w-1/2 order-2 md:order-1 space-y-6">
-<h3 class="font-headline-md text-headline-md">Sales Trend Analysis Dashboard</h3>
-<div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-surface-container-highest text-on-surface font-label-bold text-[12px] rounded">Python</span>
-<span class="px-3 py-1 bg-surface-container-highest text-on-surface font-label-bold text-[12px] rounded">Power BI</span>
-<span class="px-3 py-1 bg-surface-container-highest text-on-surface font-label-bold text-[12px] rounded">Excel</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">Comprehensive analysis of retail performance over a 24-month period, identifying seasonal peaks and customer churn patterns. Utilized advanced DAX queries and Python-driven automated cleaning.</p>
-<div class="flex gap-6 items-center">
-<button class="px-6 py-3 bg-primary-container text-on-primary font-label-bold text-label-bold rounded">View Details</button>
-<a class="text-secondary flex items-center gap-2 font-label-bold hover:underline" href="#">
-                                View Code <span class="material-symbols-outlined text-[18px]">north_east</span>
-</a>
-</div>
-</div>
-<div class="w-full md:w-1/2 order-1 md:order-2">
-<div class="aspect-video bg-surface-container rounded-xl overflow-hidden border border-outline-variant/20 relative group-hover:border-primary-container/40 transition-colors">
-<img class="w-full h-full object-cover" data-alt="A high-fidelity data visualization dashboard displayed on a sleek monitor in a professional setting. The dashboard features vibrant coral and teal line charts, bar graphs, and heat maps showing retail sales trends. The interface is modern and minimalist, with a dark charcoal theme and clear, crisp typography. Soft lighting from the screen illuminates a clean, organized workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhSrqUDSL2j7MhwPi8b0L7wOixC7LvDgBloiwVT16peU91hnx2bxPnSxcE50UDxiZUldzuZoYwxMGA6NHCfeJU4V3d0HVARgQJxIQY4HSLX59zusf5t9lGsW5xMb8aKzklHp5pvPtsKWH0Jb9PDx6ghWl6UyK7FIzxyJJeUGxa5VhwipnWpO4dNyO34LCiDS_gy_adZ7_cE2bSZL105K-BIe2zVMwekotuax1uhPPylLUdDpaxDiKSHU0R5GLcln6iqottkTYcWf6N"/>
-</div>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="flex flex-col md:flex-row gap-element-gap items-center group">
-<div class="w-full md:w-1/2">
-<div class="aspect-video bg-surface-container rounded-xl overflow-hidden border border-outline-variant/20 relative group-hover:border-secondary/40 transition-colors">
-<div class="absolute inset-0 p-8 flex items-center justify-center bg-surface-container-low">
-<code class="text-secondary font-mono text-[14px] leading-relaxed">
-                                    SELECT segment, count(*) as total<br/>
-                                    FROM (SELECT user_id, RFM_Score(last_purchase) as segment FROM orders)<br/>
-                                    GROUP BY 1 HAVING total &gt; 1000;<br/>
-                                    -- Optimized for 2.4M records
-                                </code>
-</div>
-</div>
-</div>
-<div class="w-full md:w-1/2 space-y-6">
-<h3 class="font-headline-md text-headline-md">SQL Customer Segmentation</h3>
-<div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-surface-container-highest text-on-surface font-label-bold text-[12px] rounded">SQL</span>
-<span class="px-3 py-1 bg-surface-container-highest text-on-surface font-label-bold text-[12px] rounded">Python</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">Developed an RFM (Recency, Frequency, Monetary) model using complex SQL window functions to segment over 2 million users, resulting in a 15% increase in targeted marketing conversion rates.</p>
-<div class="flex gap-6 items-center">
-<button class="px-6 py-3 bg-primary-container text-on-primary font-label-bold text-label-bold rounded">View Details</button>
-<a class="text-secondary flex items-center gap-2 font-label-bold hover:underline" href="#">
-                                View Code <span class="material-symbols-outlined text-[18px]">north_east</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Project 3 -->
-<div class="flex flex-col md:flex-row gap-element-gap items-center group">
-<div class="w-full md:w-1/2 order-2 md:order-1 space-y-6">
-<h3 class="font-headline-md text-headline-md">Supply Chain Optimization</h3>
-<div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-surface-container-highest text-on-surface font-label-bold text-[12px] rounded">Excel</span>
-<span class="px-3 py-1 bg-surface-container-highest text-on-surface font-label-bold text-[12px] rounded">Power BI</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">Optimization project focused on reducing logistics costs by 12% through better route mapping and inventory forecasting using Power Pivot and advanced Excel modeling.</p>
-<div class="flex gap-6 items-center">
-<button class="px-6 py-3 bg-primary-container text-on-primary font-label-bold text-label-bold rounded">View Details</button>
-<a class="text-secondary flex items-center gap-2 font-label-bold hover:underline" href="#">
-                                View Code <span class="material-symbols-outlined text-[18px]">north_east</span>
-</a>
-</div>
-</div>
-<div class="w-full md:w-1/2 order-1 md:order-2">
-<div class="aspect-video bg-surface-container rounded-xl overflow-hidden border border-outline-variant/20 relative group-hover:border-primary-container/40 transition-colors">
-<img class="w-full h-full object-cover" data-alt="An abstract visualization of supply chain data, featuring a network of glowing nodes and connecting lines that form a complex global web. The color scheme is a deep charcoal background with bright teal and coral pulses representing the flow of goods. The image has a professional, high-tech aesthetic, representing efficiency and structural integrity in logistics and data science." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2OwexPNLQkNTbqVUX4BfCQMjTCFu9Gs7SLDsbghqDmZ0jRV4uUBxyp1bPs9QRjwmwSHgPYcmmz6-coQUNwNhxt4Agk_2qtW7msPodPFtHGZtyK1n1r8ylSh0JRvdtDFEyyMj1KIzrydqXdrPvlSWhcybcggKfgVVscun4vFfdJTqHZryV1gNsAA1zrMlkex2hx6TAYdFR2DNOENxR6bG8rhobK-yQBNNgkKdZKcVUckX045OrZyMIPzguIRu4rHb8utizhc1XHxeV"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="py-section-gap max-w-2xl mx-auto" id="contact">
-<div class="flex items-center gap-4 mb-8">
-<div class="h-[2px] w-12 bg-primary-container"></div>
-<span class="text-on-surface font-label-bold text-label-bold uppercase tracking-widest">Contacts</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg mb-12">Have a data project?<br/>Let's talk!</h2>
-<form class="space-y-8">
-<div class="relative">
-<input class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary-container transition-all" id="name" placeholder=" " type="text"/>
-<label class="absolute top-4 left-0 text-on-surface-variant font-body-md transition-all peer-focus:-top-4 peer-focus:text-primary-container peer-focus:text-sm peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm" for="name">Name</label>
-</div>
-<div class="relative">
-<input class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary-container transition-all" id="email" placeholder=" " type="email"/>
-<label class="absolute top-4 left-0 text-on-surface-variant font-body-md transition-all peer-focus:-top-4 peer-focus:text-primary-container peer-focus:text-sm peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm" for="email">Email</label>
-</div>
-<div class="relative">
-<textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 px-0 py-4 focus:ring-0 focus:border-primary-container transition-all" id="message" placeholder=" " rows="4"></textarea>
-<label class="absolute top-4 left-0 text-on-surface-variant font-body-md transition-all peer-focus:-top-4 peer-focus:text-primary-container peer-focus:text-sm peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm" for="message">Message</label>
-</div>
-<button class="w-full md:w-auto px-12 py-4 bg-primary-container text-on-primary font-label-bold text-label-bold rounded hover:scale-105 transition-transform" type="submit">Submit</button>
-</form>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20 mt-section-gap">
-<div class="flex flex-col items-center gap-element-gap text-center px-margin-mobile">
-<div class="text-on-surface font-bold font-headline-md">María Zorayda Bejarano</div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-md">© 2024 María Zorayda Bejarano. Designed for Data Insight.</p>
-<div class="flex gap-8">
-<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">
-<span class="material-symbols-outlined text-[32px] fill-icon">mail</span>
-</a>
-<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">
-<span class="material-symbols-outlined text-[32px] fill-icon">code</span>
-</a>
-<a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">
-<span class="material-symbols-outlined text-[32px] fill-icon">person</span>
-</a>
-</div>
-</div>
-</footer>
-<script>
-        // Simple scroll spy for active navigation state
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('nav a');
+<body class="bg-[#0b0f19] text-slate-300 font-sans antialiased selection:bg-[#ff5722] selection:text-white">
+
+    <!-- Navbar / Navegación -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg text-white tracking-wide">
+                María Zorayda
+            </a>
             
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
+            <nav class="hidden md:flex space-x-10 text-sm font-medium text-slate-400">
+                <a href="#home" class="hover:text-white transition">Home</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contacts" class="hover:text-white transition">Contacts</a>
+            </nav>
 
-            navLinks.forEach(link => {
-                link.classList.remove('text-primary', 'font-bold', 'border-b-2', 'border-primary');
-                link.classList.add('text-on-surface-variant');
-                if (link.getAttribute('href').includes(current) && current !== '') {
-                    link.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary');
-                    link.classList.remove('text-on-surface-variant');
-                }
-            });
-        });
+            <div class="hidden md:block">
+                <!-- Espacio para mantener alineación -->
+            </div>
+        </div>
+    </header>
 
-        // Hover animation for project images
-        document.querySelectorAll('.group').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                const img = card.querySelector('img');
-                if (img) img.style.transform = 'scale(1.05)';
-            });
-            card.addEventListener('mouseleave', () => {
-                const img = card.querySelector('img');
-                if (img) img.style.transform = 'scale(1)';
-            });
-        });
-    </script>
-</body></html>
+    <!-- Sección Home (Principal) -->
+    <section id="home" class="relative max-w-6xl mx-auto px-6 pt-36 pb-20 md:pt-44 md:pb-32 grid grid-cols-1 md:grid-cols-2 gap-12 items-center overflow-hidden">
+        <div class="space-y-6 z-10">
+            <div class="flex items-center space-x-3">
+                <span class="text-white font-medium text-lg">Hello</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#ff5722]"></span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                I'm María <br>
+                <span class="text-white font-light text-3xl md:text-5xl mt-2 block">Data Analyst</span>
+            </h1>
+            
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-lg">
+                Transformando datos complejos en información procesable y narrativa estratégica mediante Python, SQL y Power BI.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#contacts" class="bg-[#ff5722] hover:bg-[#f4511e] text-white font-medium px-7 py-3.5 rounded-lg transition shadow-lg shadow-[#ff5722]/20">
+                    Got a project?
+                </a>
+                <a href="#projects" class="bg-transparent hover:bg-slate-800/50 border border-slate-700 text-white font-medium px-7 py-3.5 rounded-lg transition">
+                    My resume
+                </a>
+            </div>
+        </div>
+
+        <!-- Contenedor de la Imagen con Marco Circular -->
+        <div class="flex justify-center z-10">
+            <div class="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
+                <!-- Anillo decorativo exterior -->
+                <div class="absolute inset-0 rounded-full border-2 border-[#ff5722]/40 scale-105"></div>
+                <div class="absolute inset-0 rounded-full border border-dashed border-[#ff5722]/60 animate-spin-slow"></div>
+                
+                <!-- Imagen de perfil -->
+                <div class="w-64 h-64 md:w-84 md:h-84 rounded-full overflow-hidden bg-slate-800 border-4 border-[#0b0f19] shadow-2xl">
+                    <img src="Foto CV.jpg" alt="María Zorayda Bejarano" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack Tecnológico (Mini barra de habilidades inspirada en la referencia) -->
+    <div class="border-y border-slate-800/80 bg-[#070a12] py-6">
+        <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-around items-center gap-6 text-slate-400 font-medium text-sm">
+            <span class="hover:text-white transition cursor-pointer">Python</span>
+            <span class="hover:text-white transition cursor-pointer">SQL</span>
+            <span class="hover:text-white transition cursor-pointer">Power BI</span>
+            <span class="hover:text-white transition cursor-pointer">Excel</span>
+            <span class="hover:text-white transition cursor-pointer">Pandas</span>
+            <span class="hover:text-white transition cursor-pointer">Git</span>
+            <span class="hover:text-white transition cursor-pointer">Streamlit</span>
+        </div>
+    </div>
+
+    <!-- Sección About me -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5 space-y-6">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3 text-[#ff5722]">
+                    <span class="w-8 h-0.5 bg-[#ff5722]"></span>
+                    <span class="text-xs uppercase tracking-widest font-bold">Experiencia</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">About me</h2>
+            </div>
+            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                Inicié mi trayectoria enfocada en la gestión de operaciones y atención al cliente, lo que me otorgó una sólida base analítica. Desde entonces, he evolucionado hacia el análisis de datos y la ciencia de datos, combinando el rigor técnico con la visualización efectiva para resolver problemas complejos.
+            </p>
+        </div>
+
+        <div class="md:col-span-7 grid grid-cols-3 gap-6 text-center">
+            <div class="p-6 rounded-2xl bg-[#111827] border border-slate-800">
+                <span class="block text-3xl md:text-4xl font-black text-[#ff5722] mb-1">10+</span>
+                <span class="text-xs text-slate-400">Proyectos Completados</span>
+            </div>
+            <div class="p-6 rounded-2xl bg-[#111827] border border-slate-800">
+                <span class="block text-3xl md:text-4xl font-black text-[#ff5722] mb-1">98%</span>
+                <span class="text-xs text-slate-400">Precisión Analítica</span>
+            </div>
+            <div class="p-6 rounded-2xl bg-[#111827] border border-slate-800">
+                <span class="block text-3xl md:text-4xl font-black text-[#ff5722] mb-1">6+</span>
+                <span class="text-xs text-slate-400">Años de Experiencia</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center space-y-3 mb-16">
+            <div class="flex items-center justify-center space-x-3 text-[#ff5722]">
+                <span class="w-8 h-0.5 bg-[#ff5722]"></span>
+                <span class="text-xs uppercase tracking-widest font-bold">Portafolio</span>
+                <span class="w-8 h-0.5 bg-[#ff5722]"></span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Projects</h2>
+        </div>
+
+        <div class="space-y-16">
+            <!-- Proyecto 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-[#111827] border border-slate-800 rounded-3xl p-8 hover:border-slate-700 transition">
+                <div class="space-y-6">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Python</span>
+                        <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Isolation Forest</span>
+                        <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Streamlit</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">CriptoRadar</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Sistema de detección de anomalías en criptomonedas para monitorear riesgos de mercado en stablecoins y desviaciones de paridad utilizando datos de la API DefiLlama y modelos de Machine Learning.
+                    </p>
+                    <div class="flex items-center space-x-6 pt-2">
+                        <a href="#" class="text-white text-sm font-semibold hover:text-[#ff5722] transition flex items-center space-x-1">
+                            <span>View Github</span>
+                            <span>→</span>
+                        </a>
+                        <a href="#" class="text-white text-sm font-semibold hover:text-[#ff5722] transition flex items-center space-x-1">
+                            <span>View project</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-[#070a12] border border-slate-800 rounded-2xl p-6 font-mono text-xs text-slate-400 shadow-inner">
+                    <p class="text-emerald-400"># Análisis de Anomalías en Stablecoins</p>
+                    <p class="mt-2 text-slate-300">model = IsolationForest(contamination=0.01)</p>
+                    <p class="text-slate-300">predictions = model.fit_predict(df_peg_data)</p>
+                    <p class="mt-2 text-[#ff5722]">[INFO] Alertas de desviación detectadas: 0</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-[#111827] border border-slate-800 rounded-3xl p-8 hover:border-slate-700 transition">
+                <div class="space-y-6">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Power BI</span>
+                        <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">DAX</span>
+                        <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">MySQL</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Airbnb Market Analytics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Panel multiciudad construido sobre un sólido modelo de datos en estrella (`Dim_Property`, `Dim_Geography`, `Dim_Calendar`) con medidas DAX avanzadas para optimización de precios y análisis de mercado.
+                    </p>
+                    <div class="flex items-center space-x-6 pt-2">
+                        <a href="#" class="text-white text-sm font-semibold hover:text-[#ff5722] transition flex items-center space-x-1">
+                            <span>View Github</span>
+                            <span>→</span>
+                        </a>
+                        <a href="#" class="text-white text-sm font-semibold hover:text-[#ff5722] transition flex items-center space-x-1">
+                            <span>View project</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-[#070a12] border border-slate-800 rounded-2xl p-6 font-mono text-xs text-slate-400 shadow-inner">
+                    <p class="text-blue-400">/* Medida DAX de Ocupación Promedio */</p>
+                    <p class="mt-2 text-slate-300">Occupancy Rate = </p>
+                    <p class="pl-4 text-slate-300">DIVIDE(</p>
+                    <p class="pl-8 text-white">CALCULATE(COUNTROWS(Fact_Bookings)),</p>
+                    <p class="pl-8 text-white">COUNTROWS(Dim_Property)</p>
+                    <p class="pl-4 text-slate-300">)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacts -->
+    <section id="contacts" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-800/80">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <div class="flex items-center space-x-3 text-[#ff5722]">
+                    <span class="w-8 h-0.5 bg-[#ff5722]"></span>
+                    <span class="text-xs uppercase tracking-widest font-bold">Contacto</span>
+                </div>
+                <h2 class="text-4xl font-extrabold text-white tracking-tight">
+                    Have a project?<br>
+                    Let's talk!
+                </h2>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                    ¿Interesada en colaborar o debatir sobre análisis de datos e inteligencia de negocio? Escríbeme y hablemos.
+                </p>
+            </div>
+
+            <div class="bg-[#111827] border border-slate-800 p-8 rounded-3xl space-y-6">
+                <div class="space-y-2">
+                    <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold">Name</label>
+                    <input type="text" placeholder="Tu nombre" class="w-full bg-[#070a12] border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#ff5722] transition">
+                </div>
+                <div class="space-y-2">
+                    <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold">Email</label>
+                    <input type="email" placeholder="tucorreo@example.com" class="w-full bg-[#070a12] border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#ff5722] transition">
+                </div>
+                <div class="space-y-2">
+                    <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold">Message</label>
+                    <textarea rows="4" placeholder="Escribe tu mensaje aquí..." class="w-full bg-[#070a12] border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#ff5722] transition resize-none"></textarea>
+                </div>
+                <button type="button" class="w-full bg-[#ff5722] hover:bg-[#f4511e] text-white font-semibold py-3.5 rounded-xl transition shadow-lg shadow-[#ff5722]/20">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#070a12] border-t border-slate-900 text-center space-y-6">
+        <p class="text-sm font-semibold text-white tracking-wide">María Zorayda Bejarano</p>
+        <p class="text-xs text-slate-500">Designed with love, all right reserved for María Zorayda.</p>
+        <div class="flex justify-center space-x-6 text-sm text-slate-400">
+            <a href="#" class="hover:text-white transition">📧 Email</a>
+            <a href="#" class="hover:text-white transition">🐙 Github</a>
+            <a href="#" class="hover:text-white transition">💼 LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>

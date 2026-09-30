@@ -32,6 +32,7 @@
     <!-- Sección Home (Principal) -->
     <section id="home" class="relative max-w-6xl mx-auto px-6 pt-36 pb-20 md:pt-44 md:pb-32 grid grid-cols-1 md:grid-cols-2 gap-12 items-center overflow-hidden">
         <div class="space-y-6 z-10">
+            
             <div class="flex items-center space-x-3">
                 <span class="text-white font-medium text-lg">Hola</span>
                 <span class="w-2.5 h-2.5 rounded-full bg-[#ff5722]"></span>
@@ -53,22 +54,28 @@
                 <a href="#projects" class="bg-transparent hover:bg-slate-800/50 border border-slate-700 text-white font-medium px-7 py-3.5 rounded-lg transition">
                     Ver proyectos
                 </a>
+            <div class="inline-flex items-center space-x-2 bg-orange-50 border border-orange-200 text-orange-700 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-orange-600 animate-pulse"></span>
+                <span>Disponible para nuevas oportunidades</span>
+            </div>
             </div>
         </div>
 
-        <!-- Contenedor de la Imagen con Marco Circular -->
-        <div class="flex justify-center z-10">
-            <div class="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
-                <!-- Anillo decorativo exterior -->
-                <div class="absolute inset-0 rounded-full border-2 border-[#ff5722]/40 scale-105"></div>
-                <div class="absolute inset-0 rounded-full border border-dashed border-[#ff5722]/60 animate-spin-slow"></div>
-                
-                <!-- Imagen de perfil -->
-                <div class="w-64 h-64 md:w-84 md:h-84 rounded-full overflow-hidden bg-slate-800 border-4 border-[#0b0f19] shadow-2xl">
-                    <img src="Foto CV.jpg" alt="María Zorayda Bejarano" class="w-full h-full object-cover">
-                </div>
-            </div>
+       <!-- Contenedor de la Imagen con Marco Circular -->
+<div class="flex justify-center z-10">
+    <div class="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
+        <!-- Anillo decorativo exterior -->
+        <div class="absolute inset-0 rounded-full border-2 border-[#ff5722]/40 scale-105" style="border-radius: 50%;"></div>
+        <div class="absolute inset-0 rounded-full border border-dashed border-[#ff5722]/60 animate-spin-slow" style="border-radius: 50%;"></div>
+        
+        <!-- Contenedor interno forzado con CSS en línea para garantizar el círculo y ocultar esquinas -->
+        <div class="w-full h-full relative" style="border-radius: 50%; overflow: hidden;">
+        <img src="foto-cv.jpg" 
+         alt="María Zorayda Bejarano" 
+         style="width: 100%; height: 100%; object-fit: cover; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
         </div>
+    </div>
+</div>
     </section>
 
     <!-- Stack Tecnológico -->
@@ -90,27 +97,27 @@
             <div class="space-y-4">
                 <div class="flex items-center space-x-3 text-[#ff5722]">
                     <span class="w-8 h-0.5 bg-[#ff5722]"></span>
-                    <span class="text-xs uppercase tracking-widest font-bold">Experiencia</span>
+                    <span class="text-xs uppercase tracking-widest font-bold">Experiencia y Formación</span>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Sobre mí</h2>
             </div>
             <p class="text-slate-400 leading-relaxed text-sm md:text-base">
-                Inicié mi trayectoria enfocada en la gestión de operaciones y atención al cliente, lo que me otorgó una sólida base analítica. Desde entonces, he evolucionado hacia el análisis de datos, combinando el rigor técnico con la visualización efectiva para resolver problemas complejos.
+                Tras una sólida trayectoria en gestión de operaciones y atención al cliente, canalicé mis capacidades hacia el análisis de datos a través de una rigurosa formación intensiva en un bootcamp. Hoy combino esa visión operativa con un stack técnico en Python, SQL y Power BI para transformar datos en soluciones estratégicas.
             </p>
         </div>
 
         <div class="md:col-span-7 grid grid-cols-3 gap-6 text-center">
-            <div class="p-6 rounded-2xl bg-[#111827] border border-slate-800">
-                <span class="block text-3xl md:text-4xl font-black text-[#ff5722] mb-1">10+</span>
-                <span class="text-xs text-slate-400">Proyectos Completados</span>
+            <div class="p-6 rounded-2xl bg-[#111827] border border-slate-800 flex flex-col justify-center items-center">
+                <span class="block text-2xl md:text-3xl font-black text-[#ff5722] mb-1">Bootcamp</span>
+                <span class="text-xs text-slate-400">Formación Intensiva</span>
             </div>
             <div class="p-6 rounded-2xl bg-[#111827] border border-slate-800">
-                <span class="block text-3xl md:text-4xl font-black text-[#ff5722] mb-1">98%</span>
-                <span class="text-xs text-slate-400">Precisión Analítica</span>
+                <span class="block text-3xl md:text-4xl font-black text-[#ff5722] mb-1">7+</span>
+                <span class="text-xs text-slate-400">Proyectos Prácticos</span>
             </div>
             <div class="p-6 rounded-2xl bg-[#111827] border border-slate-800">
-                <span class="block text-3xl md:text-4xl font-black text-[#ff5722] mb-1">6+</span>
-                <span class="text-xs text-slate-400">Años de Experiencia</span>
+                <span class="block text-3xl md:text-4xl font-black text-[#ff5722] mb-1">4+</span>
+                <span class="text-xs text-slate-400">Herramientas Core (SQL, Python...)</span>
             </div>
         </div>
     </section>
@@ -124,6 +131,8 @@
                 <span class="w-8 h-0.5 bg-[#ff5722]"></span>
             </div>
             <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Proyectos</h2>
+            <p class="text-slate-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+                Proyectos que reflejan mi enfoque analítico y habilidades técnicas, desde la detección de anomalías en criptomonedas hasta paneles de análisis de mercado en Power BI.
         </div>
 
         <div class="space-y-16">
